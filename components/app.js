@@ -1,6 +1,7 @@
 class App {
-  constructor(gradeTable) {
+  constructor(gradeTable, pageHeader) {
     this.gradeTable = gradeTable;
+    this.pageHeader = pageHeader;
     this.handleGetGradeSuccess = this.handleGetGradeSuccess.bind(this);
     this.handleGetGradesError = this.handleGetGradesError.bind(this);
   }
