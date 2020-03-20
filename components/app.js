@@ -8,7 +8,7 @@ class App {
     console.error(error);
   }
   handleGetGradeSuccess(grades){
-    console.log(grades);
+    this.gradeTable.updateGrades(this.grades);
   }
 
   getGrades(){
