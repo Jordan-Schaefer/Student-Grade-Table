@@ -1,0 +1,16 @@
+body {
+  width: 60%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  font-size: 2.5em;
+  font-family: fantasy;
+}
+
+table {
+  width: 60%;
+  max-width: 1000px;
+  margin: auto;
+}
