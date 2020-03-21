@@ -9,8 +9,15 @@ class App {
     console.error(error);
   }
   handleGetGradeSuccess(grades){
-    this.gradeTable.updateGrades(grades);
 
+    this.gradeTable.updateGrades(grades);
+    var average = 0;
+
+    for (var i = 0; i < grades.length; i++){
+      average += grades[i].grade;
+    }
+    average = average / grades.length;
+    this.pageHeader.updateAverage(average);
   }
 
   getGrades(){
