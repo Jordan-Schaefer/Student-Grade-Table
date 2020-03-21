@@ -1,6 +1,7 @@
 body {
-  width: 60%;
+  width: 75%;
   max-width: 1000px;
+  min-width: 700px;
   margin: auto;
 }
 
@@ -14,6 +15,11 @@ header {
   text-align: center;
 }
 
+.main {
+  display: flex;
+
+}
+
 table {
   width: 60%;
   max-width: 1000px;
@@ -22,4 +28,10 @@ table {
 }
 td {
   border: 2px solid black;
+}
+
+form {
+  vertical-align: baseline;
+  max-width: 150px;
+  justify-content: center;
 }

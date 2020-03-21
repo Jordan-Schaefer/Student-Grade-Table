@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Strudent Grade Table</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  </head>
-  <body>
-    <header class="row">
 
-      <div class="col-sm">Student Grade Table</div>
-      <div class="col-sm avg">Average Grade <span class="badge badge-secondary"></span></div>
+<head>
+  <title>Strudent Grade Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
 
-    </header>
+<body>
+  <header class="row">
+
+    <div class="col-sm">Student Grade Table</div>
+    <div class="col-sm avg">Average Grade <span class="badge badge-secondary"></span></div>
+
+  </header>
+  <div class="main">
     <table class="table table-striped col">
       <thead class="thead-dark">
         <tr>
@@ -29,13 +32,15 @@
       <input type="text" placeholder="Name" name="Name">
       <input type="text" placeholder="Course" name="Course">
       <input type="text" placeholder="Grade" name="Grade">
-      <button>Add</button>
-      <button>Cancle</button>
+      <button type="submit">Add</button>
+      <button type="reset">Cancle</button>
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="components/app.js"></script>
-    <script src="components/grade-table.js"></script>
-    <script src="components/page-header.js"></script>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="components/app.js"></script>
+  <script src="components/grade-table.js"></script>
+  <script src="components/page-header.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
