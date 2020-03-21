@@ -5,8 +5,13 @@ body {
 }
 
 header {
-  font-size: 2.5em;
+  font-size: 2.3rem;
   font-family: fantasy;
+}
+
+.avg {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 table {
