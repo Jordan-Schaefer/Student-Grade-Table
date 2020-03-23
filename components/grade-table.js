@@ -3,19 +3,19 @@ class GradeTable {
     this.tableElement = tableElement;
     this.noGradesElement = noGradesElement;
   }
-  updateGrades(grades) {
 
+  updateGrades(grades) {
     console.log(grades);
     var tBody = this.tableElement.querySelector("tbody");
     var p = document.querySelector("p");
     while (tBody.firstChild) {
       tBody.removeChild(tBody.firstChild);
     }
+
     for (var i = 0; i < grades.length; i++) {
-
       this.renderGradeRow(grades[i], this.deleteGrade);
-
     }
+
     if (grades) {
       p.classList.remove(".d-none");
     } else {
@@ -50,7 +50,8 @@ class GradeTable {
     row.appendChild(del);
     tbody.appendChild(row);
 
-    delButton.addEventListener("click", this.deleteGrade(data.id));
+    delButton.addEventListener("click", function(){
+      deleteGrade(data.id)});
 
     return row;
 
