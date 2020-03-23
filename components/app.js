@@ -41,4 +41,7 @@ class App {
   handleCreateGradeError(error){
     console.error(error);
   }
+  handleCreateGradeSuccess(){
+    this.getGrades();
+  }
 }
