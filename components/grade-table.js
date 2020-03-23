@@ -14,7 +14,6 @@ class GradeTable {
       var name = document.createElement("td");
       var course = document.createElement("td");
       var grade = document.createElement("td");
-      var del = document.createElement("td");
 
       name.textContent = grades[i].name;
       course.textContent = grades[i].course;
@@ -23,7 +22,6 @@ class GradeTable {
       tr.appendChild(name);
       tr.appendChild(course);
       tr.appendChild(grade);
-      tr.appendChild(del)
       tBody.appendChild(tr);
     }
   }
@@ -33,6 +31,24 @@ class GradeTable {
   }
 
   renderGradeRow(data, deleteGrade){
+    var row = document.createElement("tr");
+    var name = document.createElement("td");
+    var course = document.createElement("td");
+    var grade = document.createElement("td");
+    var del = document.createElement("td");
+    var delButton = document.createElement("button");
+
+    name.textContent = data.name;
+    course.textContent = data.course;
+    grade.textContent = data.grade;
+    delButton.textContent = "DELETE";
+
+    del.appendChild(delButton);
+    row.appendChild(name);
+    row.appendChild(course);
+    row.appendChild(grade);
+    row.appendChild(del);
+
 
   }
 }
