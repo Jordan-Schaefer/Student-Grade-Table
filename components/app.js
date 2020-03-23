@@ -12,15 +12,15 @@ class App {
   handleGetGradesError(error){
     console.error(error);
   }
-  handleGetGradeSuccess(grades){
 
+  handleGetGradeSuccess(grades){
     this.gradeTable.updateGrades(grades);
     var average = 0;
 
     for (var i = 0; i < grades.length; i++){
       average += grades[i].grade;
     }
-    average = average / grades.length;
+    average = Math.floor(average / grades.length);
     this.pageHeader.updateAverage(average);
   }
 
@@ -46,13 +46,13 @@ class App {
       method: "POST",
       data: {
         "name": name,
-        "course": grade,
+        "course": course,
         "grade": grade
       },
       url: "https://sgt.lfzprototypes.com/api/grades",
       headers: { "x-access-token": "7eg7zS3x" },
-      success: this.handleGetGradeSuccess(),
-      error: this.handleGetGradesError(),
+      success: this.handleCreateGradeSuccess,
+      error: this.handleCreateGradeError
     })
   }
   handleCreateGradeError(error){
