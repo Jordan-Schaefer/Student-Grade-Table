@@ -52,3 +52,7 @@ input {
   right: 10rem;
   margin: 15px;
 }
+
+.d-none {
+  text-align: center;
+}
