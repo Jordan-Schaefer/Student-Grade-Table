@@ -14,6 +14,7 @@ class GradeTable {
       var name = document.createElement("td");
       var course = document.createElement("td");
       var grade = document.createElement("td");
+      var del = document.createElement("td");
 
       name.textContent = grades[i].name;
       course.textContent = grades[i].course;
@@ -22,6 +23,7 @@ class GradeTable {
       tr.appendChild(name);
       tr.appendChild(course);
       tr.appendChild(grade);
+      tr.appendChild(del)
       tBody.appendChild(tr);
     }
   }
