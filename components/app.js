@@ -38,4 +38,7 @@ class App {
     console.log("The course is ", course);
     console.log("The grade is ", grade);
   }
+  handleCreateGradeError(error){
+    console.error(error);
+  }
 }
