@@ -35,3 +35,15 @@ form {
   max-width: 150px;
   justify-content: center;
 }
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+
+}
