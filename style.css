@@ -29,24 +29,26 @@ td {
   border: 2px solid black;
 }
 
-form {
-  vertical-align: baseline;
-  max-width: 100px;
-  justify-content: center;
-}
-
 .inputs {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+
+}
+
+.input-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 75%;
 }
 
 input {
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .button {
   position: absolute;
-  right: 7rem;
+  right: 10rem;
   margin: 15px;
 }
