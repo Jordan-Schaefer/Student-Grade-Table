@@ -43,10 +43,6 @@ class App {
     this.gradeTable.onDeleteClick(this.deleteGrade);
   }
   createGrade(name, course, grade){
-    console.log("The name is ", name);
-    console.log("The course is ", course);
-    console.log("The grade is ", grade);
-
     $.ajax({
       method: "POST",
       data: {
@@ -70,7 +66,6 @@ class App {
   }
 
   deleteGrade(id){
-    console.log(id);
     $.ajax({
       method: "DELETE",
       url: "https://sgt.lfzprototypes.com/api/grades/" + id,
