@@ -9,3 +9,6 @@ var gradeForm = new GradeForm(form);
 
 var app = new App(gradeTable, pageHeader, gradeForm);
 app.start();
+
+// var add = document.querySelector(".btn-success");
+// add.addEventListener("click", gradeForm.handleSubmit);

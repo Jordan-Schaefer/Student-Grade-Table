@@ -5,6 +5,9 @@ class App {
     this.gradeForm = gradeForm;
     this.handleGetGradeSuccess = this.handleGetGradeSuccess.bind(this);
     this.handleGetGradesError = this.handleGetGradesError.bind(this);
+    this.createGrade = this.createGrade.bind(this);
+    this.handleCreateGradeError = this.handleCreateGradeError.bind(this);
+    this.handleCreateGradeSuccess = this.handleCreateGradeSuccess.bind(this);
   }
   handleGetGradesError(error){
     console.error(error);
@@ -32,6 +35,7 @@ class App {
   }
   start(){
     this.getGrades();
+    this.gradeForm.onSubmit(this.createGrade);
   }
   createGrade(name, course, grade){
     console.log("The name is ", name);
